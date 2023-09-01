@@ -56,15 +56,63 @@
 		A8B9AC9228B29E680069665A /* TaskList */ = {
 			isa = PBXGroup;
 			children = (
-				A8B9AC9328B29E680069665A /* AppDelegate.swift */,
-				A8B9AC9528B29E680069665A /* SceneDelegate.swift */,
-				A8B9AC9728B29E680069665A /* TaskListViewController.swift */,
-				A8B9AC9F28B29E680069665A /* Assets.xcassets */,
-				A8B9ACA128B29E680069665A /* LaunchScreen.storyboard */,
-				A8B9ACA428B29E680069665A /* Info.plist */,
-				A8B9AC9C28B29E680069665A /* TaskList.xcdatamodeld */,
+				ED9B11282AA21298006D6F34 /* Services */,
+				ED9B11232AA211F1006D6F34 /* App */,
+				ED9B11242AA211FA006D6F34 /* ViewControllers */,
+				ED9B11262AA21221006D6F34 /* Resources */,
+				ED9B11252AA21217006D6F34 /* Storyboards */,
+				ED9B11272AA21229006D6F34 /* Models */,
 			);
 			path = TaskList;
+			sourceTree = "<group>";
+		};
+		ED9B11232AA211F1006D6F34 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A8B9AC9328B29E680069665A /* AppDelegate.swift */,
+				A8B9ACA428B29E680069665A /* Info.plist */,
+				A8B9AC9528B29E680069665A /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ED9B11242AA211FA006D6F34 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8B9AC9728B29E680069665A /* TaskListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ED9B11252AA21217006D6F34 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A8B9ACA128B29E680069665A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ED9B11262AA21221006D6F34 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8B9AC9F28B29E680069665A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED9B11272AA21229006D6F34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A8B9AC9C28B29E680069665A /* TaskList.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED9B11282AA21298006D6F34 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GBTTU32HS2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaskList/Info.plist;
+				INFOPLIST_FILE = TaskList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -308,7 +356,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GBTTU32HS2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaskList/Info.plist;
+				INFOPLIST_FILE = TaskList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
