@@ -14,6 +14,7 @@
 		A8B9ACA028B29E680069665A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B9AC9F28B29E680069665A /* Assets.xcassets */; };
 		A8B9ACA328B29E680069665A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B9ACA128B29E680069665A /* LaunchScreen.storyboard */; };
 		ED9B112A2AA3675F006D6F34 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9B11292AA3675F006D6F34 /* StorageManager.swift */; };
+		ED9B112D2AA4BA65006D6F34 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9B112C2AA4BA65006D6F34 /* AlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A8B9ACA228B29E680069665A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8B9ACA428B29E680069665A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED9B11292AA3675F006D6F34 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		ED9B112C2AA4BA65006D6F34 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		A8B9AC9228B29E680069665A /* TaskList */ = {
 			isa = PBXGroup;
 			children = (
+				ED9B112B2AA4BA43006D6F34 /* Extensions */,
 				ED9B11282AA21298006D6F34 /* Services */,
 				ED9B11232AA211F1006D6F34 /* App */,
 				ED9B11242AA211FA006D6F34 /* ViewControllers */,
@@ -116,6 +119,14 @@
 				ED9B11292AA3675F006D6F34 /* StorageManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		ED9B112B2AA4BA43006D6F34 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ED9B112C2AA4BA65006D6F34 /* AlertController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 				A8B9AC9828B29E680069665A /* TaskListViewController.swift in Sources */,
 				ED9B112A2AA3675F006D6F34 /* StorageManager.swift in Sources */,
 				A8B9AC9428B29E680069665A /* AppDelegate.swift in Sources */,
+				ED9B112D2AA4BA65006D6F34 /* AlertController.swift in Sources */,
 				A8B9AC9628B29E680069665A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
