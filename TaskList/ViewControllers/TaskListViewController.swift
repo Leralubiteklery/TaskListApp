@@ -86,14 +86,10 @@ class TaskListViewController: UITableViewController {
         let cellIndex = IndexPath(row: taskList.count - 1, section: 0)
         tableView.insertRows(at: [cellIndex], with: .automatic)
         
-        if viewContext.hasChanges {
-            do {
-                try viewContext.save()
-            } catch let error {
-                print(error)
-            }
-        }
+        
     }
+    
+    
 }
 
 extension TaskListViewController {
@@ -109,4 +105,24 @@ extension TaskListViewController {
         cell.contentConfiguration = content
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle,  forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            taskList.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+//            remove from CoreData'
+            let task = Task(context: viewContext)
+            viewContext.delete(task)
+            if viewContext.hasChanges {
+                do {
+                    try viewContext.save()
+                } catch let error {
+                    print(error)
+                }
+            }
+            fetchData()
+
+        }
+    }
 }
+
